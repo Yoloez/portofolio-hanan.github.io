@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio - Hanan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+      (function () {
+        emailjs.init("6ifygz6eWs9E_cGAA");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nama"><span>Hanan Fijananto</span></div>
+        <ul class="nav-link">
+          <li>
+            <a href="#aboutme">About Me</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="btn-visit">
+          <a href="https://github.com/Yoloez">My Github</a>
+        </button>
+        <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+      </nav>
+    </header>
+
+    <section id="aboutme" class="aboutme">
+      <div class="profil">
+        <img src="profil hanan 4k.jpeg" alt="profil" />
+        <div class="content">
+          <div class="greet">
+            <h2 style="font-size: 2rem; color: aliceblue">Hello, World!</h2>
+          </div>
+          <div class="nama-profil">
+            <h1>I'm <span style="color: transparent; background: linear-gradient(to left, rgb(0, 157, 255), rgb(255, 0, 255)); background-clip: text; font-weight: 500">Hanan</span> Fijananto</h1>
+            <h4>Software Engineering Student</h4>
+          </div>
+          <div class="btn-sosmed">
+            <a href="hanan-cv-real.pdf" download>
+              <button>Download CV</button>
+            </a>
+            <div class="ikon-sosmed">
+              <a href="https://www.instagram.com/hananfijananto/"><i class="fa-brands fa-instagram"></i></a>
+
+              <a href="https://www.linkedin.com/in/hanan-fijananto-1362152b7/"><i class="fa-brands fa-linkedin"></i></a>
+
+              <a href="https://x.com/_hnfstudy"><i class="fa-brands fa-x-twitter" id="twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <h1 align="center" style="color: white">Education</h1>
+      <div class="experience-container">
+        <div class="experience-card">
+          <div class="experience-icon">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <h3>Gadjah Mada University</h3>
+          <p>Pursuing a degree in Software Engineering.</p>
+          <div class="dropdown-education">
+            <button class="dropbtn" onclick="toggleDropdown('dropdownuniv')">Details</button>
+            <div class="dropdown-content" id="dropdownuniv" style="display: none; background-color: #d5d3ea; min-width: 260px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1">
+              <p>2024 - Present</p>
+              <p>Gadjah Mada University, Yogyakarta, Indonesia</p>
+              <p>Major: Software Engineering</p>
+              <p>Member of SRD (Software Research and Development) KOMATIK</p>
+            </div>
+          </div>
+        </div>
+        <div class="experience-card">
+          <div class="experience-icon">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h3>SMA Negeri 2 Yogyakarta</h3>
+          <p>2021-2024</p>
+          <div class="dropdown-education">
+            <button class="dropbtn" onclick="toggleDropdown('smaDropdown')">Details</button>
+            <div class="dropdown-content" id="smaDropdown" style="display: none">
+              <p>Graduated in 2024</p>
+              <p>Specialized in Science</p>
+              <p>Experience:</p>
+              <p>DDD's Staff at Smada Social Day event (Designing lanyard)</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="experience-card">
+          <div class="experience-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Projects</h3>
+          <p>Worked on multiple software development projects.</p>
+        </div> -->
+        <div class="experience-card">
+          <div class="experience-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3>SMP Negeri 4 Ngaglik</h3>
+          <p>2018-2021</p>
+          <div class="dropdown-education">
+            <button class="dropbtn" onclick="toggleDropdown('dropdown-SMP')">Details</button>
+            <div class="dropdown-content" id="dropdown-SMP" style="display: none; background-color: #d5d3ea; min-width: 260px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1">
+              <p>Graduated in 2021</p>
+              <p>Achieved 3rd place in Gladhi Kawruh Basa Jawa competition regional</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="skills-container">
+        <div class="skill-title"><h1 style="color: white">Skills</h1></div>
+        <p align="center" style="font-size: 1.5rem; color: white">Achieved Infinite WPM on Monkeytype—because speed limits don’t apply to my typing.</p>
+        <div class="video-skills">
+          <video width="640" height="360" controls>
+            <source src="1013.mp4" />
+          </video>
+        </div>
+        <div class="programming-languages">
+          <h2>Programming Languages</h2>
+          <div class="language-list">
+            <div class="language-item">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="language-item">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS</span>
+              <span>80%</span>
+            </div>
+            <div class="language-item">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+              <span>45%</span>
+            </div>
+            <div class="language-item">
+              <i class="fa-brands fa-python"></i>
+              <span>Python</span>
+              <span>65%</span>
+            </div>
+            <div class="language-item">
+              <i class="fa-brands fa-java"></i>
+              <span>Java</span>
+              <span>30%</span>
+            </div>
+            <div class="language-item">
+              <i class="fa-solid fa-database"></i>
+              <span>SQL</span>
+              <span>50%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="custom-wave">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path
+          fill="#ffff"
+          fill-opacity="1"
+          d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,138.7C672,139,768,117,864,117.3C960,117,1056,139,1152,138.7C1248,139,1344,117,1392,106.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+
+    <section id="contact" class="contact">
+      <h1 align="center">Contact</h1>
+      <p align="center">Let’s turn ideas into reality! If you have any thoughts, questions, or collaborations in mind,esitate to send me a message. I’d love to chat!</p>
+      <div class="input-main">
+        <div class="form-bg">
+          <form id="contact-form" class="form">
+            <input type="email" class="email" name="email" placeholder="Your Email" required />
+            <textarea type="text" class="message" name="message" placeholder="Send me message" required></textarea>
+            <button type="submit" class="send">Send</button>
+          </form>
+        </div>
+        <img src="illustration-email.png" alt="email-illustration" width="540px" height="400px" />
+      </div>
+    </section>
+
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <p id="popup-message"></p>
+        <button id="popup-close" class="popup-close">Close</button>
+      </div>
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        <p>&copy; 2025 Hanan Fijananto. All rights reserved.</p>
+        <p>Made from stretch by Hanan Fijananto</p>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+    </footer>
+    <script>
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const navLink = document.querySelector(".nav-link");
+      const navLinks = document.querySelectorAll(".nav-link a");
+      const popup = document.getElementById("popup");
+      const popupMessage = document.getElementById("popup-message");
+      const popupClose = document.getElementById("popup-close");
+
+      hamburgerIcon.addEventListener("click", () => {
+        navLink.classList.toggle("active");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navLink.classList.remove("active");
+        });
+      });
+
+      const contactForm = document.getElementById("contact-form");
+
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_170kr5g", "template_csjebky", this).then(
+          () => {
+            popupMessage.textContent = "Message sent successfully!";
+            popup.classList.remove("hidden");
+            contactForm.reset();
+          },
+          (error) => {
+            popupMessage.textContent = "Failed to send message. Please try again later.";
+            popup.classList.remove("hidden");
+            console.error("EmailJS Error:", error);
+          }
+        );
+      });
+
+      popupClose.addEventListener("click", () => {
+        popup.classList.add("hidden");
+      });
+
+      const detailButtons = document.querySelectorAll(".dropbtn");
+
+      detailButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const dropdownContent = button.nextElementSibling;
+          dropdownContent.classList.toggle("visible");
+        });
+      });
+
+      function toggleDropdown(dropdownId) {
+        const dropdown = document.getElementById(dropdownId);
+        if (dropdown.style.display === "none" || dropdown.style.display === "") {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
